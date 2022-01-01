@@ -3,7 +3,7 @@
   --black: #000;
   --white: #fff;
   --gray: #cdcdcd;
-  --transparent: rgba(255,255,255,0.149);
+  --transparent: rgba(255, 255, 255, 0.149);
   --progress: 0%;
 }
 *,
@@ -11,6 +11,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  user-select: none;
 }
 html,
 body {
@@ -34,7 +35,7 @@ body {
 }
 .music-player::before,
 .music-player::after {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   position: absolute;
@@ -50,7 +51,7 @@ body {
   background-size: cover;
 }
 .music-player::after {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 600px) {
   .music-player {
